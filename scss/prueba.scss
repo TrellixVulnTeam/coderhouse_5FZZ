@@ -3,6 +3,8 @@ $colorDeFondo:#8ecae6;
 $colorDeBloques: #219ebc;
 $naranjaClaro: #ffb703;
 $naranjaOscuro: #fb8500;
+$azulOscuro: #023047;
+$FuentedelSitio: Electrolize;
 
 /*INDEX*/
 /*ESTRUCTURA*/
@@ -30,16 +32,18 @@ $naranjaOscuro: #fb8500;
     grid-template-rows:  0.4fr 2.2fr 0.4fr;
 }
 
+
+
 #grilla3 {
     display: grid;
     grid-template-areas:
     "cabeza"
-    "productos"
+    "nosotros"
     "mapa"
     "pie";
     row-gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows:  0.3fr 0.8fr 1.1fr 0.4fr;
+    grid-template-rows:  0.3fr fit-content 1.1fr 0.4fr;
   }
 
 #grilla4 {
@@ -66,6 +70,18 @@ $naranjaOscuro: #fb8500;
     grid-template-rows:  0.2fr 2.2fr 0.4fr;
 }
 
+#grilla6 {
+    display: grid;
+    grid-template-areas:
+    "cabeza"
+    "novedades"
+    "pie";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows:  0.4fr 2.2fr 0.4fr;
+}
+
 header {
     grid-area: cabeza;
     background-color: $colorDeBloques;
@@ -79,6 +95,23 @@ section#productos {
     overflow: hidden;
     text-align: center;
     object-fit: cover;
+}
+
+section#novedades {
+    grid-area: novedades;
+    background-color: $colorDeBloques;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-left: 25%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+}
+
+section#nosotros {
+    grid-area: nosotros;
+    background-color: $colorDeBloques;
+    border-radius: 10px;
+    object-fit: fill;
 }
 
 section#reparaciones {
@@ -132,11 +165,9 @@ section#video {
     border-radius: 10px;
     text-align: center;
     padding-top: 5%;
-    padding-bottom: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    overflow: hidden;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 section#mapa {
@@ -145,7 +176,10 @@ section#mapa {
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    padding: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+
 }
 
 footer {
@@ -179,6 +213,7 @@ h3 {
     font-family:Electrolize;
     font-weight: bold;
     padding-left: 3.5%;
+    text-align: left;
 }
 
 .fuenteDelSitio {
@@ -186,6 +221,43 @@ h3 {
     color: #f1f1f1;
   }
 
+.textoCentrado {
+    text-align: center;
+  }
+
+/*LINKS REDES SOCIALES*/
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transform: scale(1.5);
+    margin-left: 10%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  
 /*ANIMACIÓN DE TITULO*/
 @keyframes text-shadow {
     0% {  
@@ -237,9 +309,6 @@ img {
     max-height: 100%;
 }
 
-.carrusel {
-    object-fit: contain;
-}
 
 .gridConImagen {
     display: flex;
@@ -429,65 +498,158 @@ img {
 
 /*NOSOTROS*/
 
-.rowNosotros {
+.container1 {
     display: flex;
-  }
-  
-.columnNosotros {
-    flex: 33.33%;
-    padding: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 15%;
+    padding-right: 10%;
   }
 
-  .container {
+.imgSize {
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+.textoNombres {
+    text-align: center;
+    font-family: $FuentedelSitio;
+    font-size: 20px;
+    color: white;
+  }
+
+.textoCargos {
+    text-align: center;
+    font-family: $FuentedelSitio;
+    font-size: 15px;
+    color: $azulOscuro;
+  }
+
+/* IFRAMES RESPONSIVE*/
+.responsive-map-container {
     position: relative;
-    width: 50%;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
 
-
-  .overlay {
+.responsive-map-container iframe,   
+.responsive-map-container object,  
+.responsive-map-container embed {
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.div_contenedor {
+	position: relative;
+	padding-bottom: 56.25%; /*panorámico*/
+	padding-top: 25px;
+	height: 0;
+}
+.div_contenedor iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*CARRUSEL*/
+* {
+    box-sizing: border-box;
+  }
+  
+  .slider {
+    width: 50vw;
+    text-align: center;
+    overflow-x: auto;
+  }
+  
+  .slides {
+    display: flex;
+    
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+    
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    
+    /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+  }
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+  }
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 600px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  
+  .author-info {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
-    height: 100%;
     width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #219dbcb0;
+    margin: 0;
   }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
+  .author-info a {
     color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: Electrolize;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
   }
   
+  .slider > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+  }
+  .slider > a:active {
+    top: 1px;
+  }
+  .slider > a:focus {
+    background: #000;
+  }
 
-/*NOVEDADES*/
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 70%;
-  margin: auto;
-}
 
 /* MEDIA QUERIES */
 
@@ -512,8 +674,21 @@ img {
         flex-direction: row;
         padding-top: 5%;
         padding-bottom: 5%; 
-    
     }
+
+    #grilla4 {
+        display: grid;
+        grid-template-areas:
+        "cabeza"
+        "reparaciones"
+        "video"
+        "pie";
+        column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows:  0.4fr 1fr 1fr 0.4fr;
+    }
+
 
 }  
   @media only screen and (max-width:500px)
@@ -546,13 +721,13 @@ img {
         display: grid;
         grid-template-areas:
         "cabeza"
-        "video"
         "reparaciones"
+        "video"
         "pie";
         column-gap: 10px;
         grid-row-gap: 10px;
-        grid-template-columns: 100%;
-        grid-template-rows:  0.3fr 0.4fr 1fr 0.2fr;
+        grid-template-columns: 1fr;
+        grid-template-rows:  fit-content 1fr 1fr 0.4fr;
     }
 
     section#reparaciones {
