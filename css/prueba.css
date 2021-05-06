@@ -2,7 +2,8 @@
 /*ESTRUCTURAS*/
 /*HEADER Y FOOTER*/
 header {
-  grid-area: cabeza; }
+  grid-area: cabeza;
+  margin-bottom: -5%; }
 
 footer {
   grid-area: pie;
@@ -126,7 +127,7 @@ section#form {
 
 .fuenteSubtitulos {
   font-family: 'Montserrat', sans-serif;
-  font-size: 5vw;
+  font-size: 7vw;
   color: #A4ADD7;
   padding-left: 5%; }
 
@@ -385,4 +386,13 @@ section#form {
     margin-right: 10%; }
   .banner {
     align-items: flex-start;
-    height: 400px; } }
+    height: 400px; }
+  .fuenteDelTitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11vw;
+    color: #A4ADD7; }
+  .fuenteSubtitulos {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15vw;
+    color: #A4ADD7;
+    padding-left: 5%; } }
