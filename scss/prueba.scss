@@ -164,7 +164,7 @@ section#form {
 
 .fuenteDelTitulo {
     font-family: 'Montserrat', sans-serif;
-    font-size: 5em;
+    font-size: 9vw;
     color: #A4ADD7;
 }
 
@@ -176,7 +176,7 @@ section#form {
 
 .fuenteSubtitulos {
   font-family: 'Montserrat', sans-serif;
-  font-size: 4em;
+  font-size: 5vw;
   color: #A4ADD7;
   padding-left: 5%;
 }
@@ -205,9 +205,6 @@ section#form {
 
 .fondoBanner1 {
   background-image: url(/fotosIndex/fotoBanner.png);
-  background-size: cover;
-  width: 100%;
-  height: 400px;
 }
 
 @each $categoria in 2, 3, 4, 5{
@@ -412,18 +409,6 @@ section#form {
     "rep5 rep6";
   }
 
-  .fuenteDelTitulo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    color: #A4ADD7;  
-  }
-
-  .fuenteSubtitulos {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    color: #A4ADD7;
-    padding-left: 5%;
-  }
 
   .hover-text {
     font-size: 8vw;
@@ -484,14 +469,6 @@ section#mapa {
     max-height: 90%;
   }
 
-.fuenteDelTitulo {
-    font-size: 3em; 
-  }
-
-  .fuenteSubtitulos {
-    font-size: 3em;
-    padding-left: 5%;
-  }
 
   section#mapa {
     padding-left: 5%;

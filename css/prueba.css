@@ -116,7 +116,7 @@ section#form {
 
 .fuenteDelTitulo {
   font-family: 'Montserrat', sans-serif;
-  font-size: 5em;
+  font-size: 9vw;
   color: #A4ADD7; }
 
 .fuenteLogo {
@@ -126,7 +126,7 @@ section#form {
 
 .fuenteSubtitulos {
   font-family: 'Montserrat', sans-serif;
-  font-size: 4em;
+  font-size: 5vw;
   color: #A4ADD7;
   padding-left: 5%; }
 
@@ -148,10 +148,7 @@ section#form {
 
 /*FONDOS BANNER*/
 .fondoBanner1 {
-  background-image: url(/fotosIndex/fotoBanner.png);
-  background-size: cover;
-  width: 100%;
-  height: 400px; }
+  background-image: url(/fotosIndex/fotoBanner.png); }
 
 .fondoBanner2 {
   background-image: url(/fotosIndex/Banner2.png); }
@@ -330,15 +327,6 @@ section#form {
     margin-left: 10%;
     margin-right: 10%;
     grid-template-areas: "rep1 rep2"  "rep3 rep4"  "rep5 rep6"; }
-  .fuenteDelTitulo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    color: #A4ADD7; }
-  .fuenteSubtitulos {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    color: #A4ADD7;
-    padding-left: 5%; }
   .hover-text {
     font-size: 8vw; }
   .hover-subtext {
@@ -371,11 +359,6 @@ section#form {
     padding-right: 5vh;
     max-width: 90%;
     max-height: 90%; }
-  .fuenteDelTitulo {
-    font-size: 3em; }
-  .fuenteSubtitulos {
-    font-size: 3em;
-    padding-left: 5%; }
   section#mapa {
     padding-left: 5%;
     padding-right: 5%; }
