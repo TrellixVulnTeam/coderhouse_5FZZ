@@ -4,69 +4,100 @@
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="css/prueba.css" >
   <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
-	<title>Full Soluciones</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://kit.fontawesome.com/20d3a8fedc.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Full Soluciones | Novedades</title>
 </head>
 <body>
-    <div id="grilla6">
-        <header class="border gradiente">
-            <div class="header">
-              <h1 class="paddingDeTitulo"><a style="text-decoration: none" href="index.html">Full Soluciones</a></h1>
-                    <h3 class="paddingDeTitulo">Ventas y reparaciones electrónicas</h3>
-              </div>
-              <div class="navbar">
-                <a href="contacto.html">Contacto</a>
-                <div class="subnav">
-                 <a href="novedades.html">Novedades</a>
-                </div> 
-                <div class="subnav">
-                 <a href="nosotros.html">Nosotros</a>
-                </div> 
-                <a href="reparaciones.html">Reparaciones</a>
-                <div class="subnav">
-                </div>
-             </div>
-        </header>
-        <section id="novedades" class="border">
-          <div class="slider">
-  
-            <a href="#slide-1">1</a>
-            <a href="#slide-2">2</a>
-            <a href="#slide-3">3</a>
-            <a href="#slide-4">4</a>
-            <a href="#slide-5">5</a>
-          
-            <div class="slides">
-              <div id="slide-1">
-                <img src="carrusel/1x/Recurso 1.png" alt="">
-              </div>
-              <div id="slide-2">
-                <img src="carrusel/1x/Recurso 2.png" alt="">
-              </div>
-              <div id="slide-3">
-                <img src="carrusel/1x/Recurso 3.png" alt="">
-              </div>
-              <div id="slide-4">
-                <img src="carrusel/1x/Recurso 4.png" alt="">
-              </div>
-              <div id="slide-5">
-                <img src="carrusel/1x/Recurso 5.png" alt="">
+    <div id="novedades">
+      <header class="">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand fuenteLogo" href="index.html">FS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link fuenteDelSitio" href="reparaciones.html">Reparaciones</a>
+                <a class="nav-link fuenteDelSitio" href="nosotros.html">Nosotros</a>
+                <a class="nav-link fuenteDelSitio active" aria-current="page" href="novedades.html">Novedades</a>
+                <a class="nav-link fuenteDelSitio" href="contacto.html">Contacto</a>
               </div>
             </div>
           </div>
+        </nav>
+
+        <div class="banner fondoBanner5">
+          <p class="h1 fuenteDelTitulo display-4">NOVEDADES</p>
+          <p class="h3 fuenteDelSitio"></p>
+        </div>
+        <p class="h2 fuenteSubtitulos display-4">NO TE PIERDAS DE LO ÚLITMO</p>
+  </header>
+        <section id="novedades" class="">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="fotosIndex/1x/camara.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Camara Canon Eos 5d Mark IV</h5>
+                  <p>Explore el mundo de la fotografía y perfeccione sus habilidades.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="fotosIndex/1x/auriculares.png" class="d-block w-100" alt="camara">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Audeze Mobius Premium 3d</h5>
+                  <p>Los primeros auriculares premium de alta gama envolventes.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="fotosIndex/1x/speaker.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Parlante Portátil Xiaomi Mi 2</h5>
+                  <p>Sonido compacto con Bluetooth con el altavoz inalámbrico</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </section>
-<footer class="border">
-    <div class="row">
-        <div class="column">Full Soluciones <br>
-                    Av. 18 de Julio 2302, 11200 Montevideo, Departamento de Montevideo <br>
-                    Horario: Lunes a Viernes de 10 a 18hs</div>
-         <div class="column">
-                    Teléfono: 2408 1770 <br>
-                    Email: contacto@fullsoluciones.com <br>
-                Instagram: @full.soluciones
-        </div>
-        </div>
-</footer> 
+
+<footer class="">
+Full Soluciones <br>
+Av. 18 de Julio 2302, 11200 Montevideo, Departamento de Montevideo <br>
+Horario: Lunes a Viernes de 10 a 18hs <br>
+Teléfono: 2408 1770
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <button type="button" class="boton btn btn-secondary"><i class="fab fa-twitter scale"></i></button>
+    <button type="button" class="boton btn btn-secondary"><i class="fab fa-facebook scale"></i></button>
+    <button type="button" class="boton btn btn-secondary"><i class="fab fa-instagram scale"></i></button>
+  </div>
+</div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
 </html>
