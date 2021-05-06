@@ -1,6 +1,21 @@
 /*VARIABLES*/
+/*ESTRUCTURAS*/
+/*HEADER Y FOOTER*/
+header {
+  grid-area: cabeza; }
+
+footer {
+  grid-area: pie;
+  text-align: left;
+  padding: 5%;
+  background-color: #6E8DA4;
+  color: white;
+  font-family: Electrolize; }
+
+body {
+  background-color: #202529; }
+
 /*INDEX*/
-/*ESTRUCTURA*/
 #index {
   display: grid;
   grid-template-areas: "cabeza" "index" "pie";
@@ -17,6 +32,7 @@ section#index {
   margin-left: 10%;
   grid-template-areas: "index1"  "index2" "index3"  "index4"; }
 
+/*REPARACIONES*/
 #reparaciones {
   display: grid;
   grid-template-areas: "cabeza" "repair" "pie";
@@ -33,6 +49,7 @@ section#repair {
   margin-right: 10%;
   grid-template-areas: "rep1 rep2 rep3"  "rep4 rep5 rep6"; }
 
+/*NOVEDADES*/
 #nosotros {
   display: grid;
   grid-template-areas: "cabeza" "staff" "mapa" "pie";
@@ -40,6 +57,26 @@ section#repair {
   grid-template-columns: 1fr;
   grid-template-rows: 0.3fr fit-content 1.1fr 0.4fr; }
 
+section#staff {
+  grid-area: staff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 5px;
+  padding-left: 10%;
+  padding-right: 10%;
+  grid-template-areas: "staff1 staff2 staff3"; }
+
+section#mapa {
+  grid-area: mapa;
+  background-color: #202529;
+  text-align: left;
+  overflow: hidden;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5%; }
+
+/*NOSOTROS*/
 #novedades {
   display: grid;
   grid-template-areas: "cabeza" "novedades" "pie";
@@ -48,6 +85,15 @@ section#repair {
   grid-template-columns: 1fr;
   grid-template-rows: 0.4fr fit-content 0.4fr; }
 
+section#novedades {
+  grid-area: novedades;
+  background-color: #202529;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%; }
+
+/*CONTACTO*/
 #contacto {
   display: grid;
   grid-template-areas: "cabeza" "form" "pie";
@@ -60,53 +106,6 @@ section#form {
   padding-bottom: 5%;
   margin-left: 20%;
   margin-right: 20%; }
-
-section#staff {
-  grid-area: staff;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 5px;
-  padding-left: 10%;
-  padding-right: 10%;
-  grid-template-areas: "staff1 staff2 staff3"; }
-
-header {
-  grid-area: cabeza; }
-
-section#productos {
-  grid-area: productos;
-  overflow: hidden;
-  text-align: center;
-  object-fit: cover; }
-
-section#novedades {
-  grid-area: novedades;
-  background-color: #202529;
-  padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 5%; }
-
-section#mapa {
-  grid-area: mapa;
-  background-color: #202529;
-  text-align: left;
-  overflow: hidden;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 5%; }
-
-footer {
-  grid-area: pie;
-  text-align: left;
-  padding: 5%;
-  background-color: #6E8DA4;
-  color: white;
-  font-family: Electrolize; }
-
-body {
-  background-color: #202529; }
 
 /*TITULOS Y TEXTOS*/
 .fuenteDelSitio {
@@ -146,6 +145,7 @@ body {
   color: #E8EBF6;
   padding: 10px; }
 
+/*FONDOS BANNER*/
 .fondoBanner1 {
   background-image: url(/fotosIndex/fotoBanner.png);
   background-size: cover;
@@ -153,18 +153,18 @@ body {
   height: 400px; }
 
 .fondoBanner2 {
-  background-image: url(/fotosIndex/BannerReparaciones.png); }
+  background-image: url(/fotosIndex/Banner2.png); }
 
 .fondoBanner3 {
-  background-image: url(/fotosIndex/BannerNosotros.png); }
+  background-image: url(/fotosIndex/Banner3.png); }
 
 .fondoBanner4 {
-  background-image: url(/fotosIndex/BannerContacto.png); }
+  background-image: url(/fotosIndex/Banner4.png); }
 
 .fondoBanner5 {
-  background-image: url(/fotosIndex/BannerNovedades.png); }
+  background-image: url(/fotosIndex/Banner5.png); }
 
-/*CARDS*/
+/*CARDS INDEX*/
 .tarjeta {
   padding-left: 15vh;
   padding-right: 15vh;
@@ -180,7 +180,7 @@ body {
 .imagenTarjeta:hover {
   transform: scale(1.5); }
 
-/*BOTON CARDS*/
+/*BOTON DE CARDS*/
 .middle {
   position: relative;
   top: 70%;
@@ -228,77 +228,6 @@ body {
 .scale {
   transform: scale(1.5); }
 
-/*OPERACIONES*/
-.card__link--limpieza:hover {
-  background: url("/imagenCard/limpieza.jpg");
-  background-size: cover;
-  opacity: 0.8;
-  transition-property: all;
-  transition-property: transform;
-  transition-duration: 1s;
-  transform: scale(1.5);
-  color: white; }
-
-.card__link--entretenimiento:hover {
-  background: url("/imagenCard/entretenimiento.jpg");
-  background-size: cover;
-  opacity: 0.8;
-  transition-property: all;
-  transition-property: transform;
-  transition-duration: 1s;
-  transform: scale(1.5);
-  color: white; }
-
-.card__link--cocina:hover {
-  background: url("/imagenCard/cocina.jpg");
-  background-size: cover;
-  opacity: 0.8;
-  transition-property: all;
-  transition-property: transform;
-  transition-duration: 1s;
-  transform: scale(1.5);
-  color: white; }
-
-.card__link--informatica:hover {
-  background: url("/imagenCard/informatica.jpg");
-  background-size: cover;
-  opacity: 0.8;
-  transition-property: all;
-  transition-property: transform;
-  transition-duration: 1s;
-  transform: scale(1.5);
-  color: white; }
-
-.card__link--belleza:hover {
-  background: url("/imagenCard/belleza.jpg");
-  background-size: cover;
-  opacity: 0.8;
-  transition-property: all;
-  transition-property: transform;
-  transition-duration: 1s;
-  transform: scale(1.5);
-  color: white; }
-
-.card__link--pequenoselectronicos:hover {
-  background: url("/imagenCard/pequenoselectronicos.jpg");
-  background-size: cover;
-  opacity: 0.8;
-  transition-property: all;
-  transition-property: transform;
-  transition-duration: 1s;
-  transform: scale(1.5);
-  color: white; }
-
-.tamanos-1 {
-  width: 100px; }
-
-.tamanos-2 {
-  width: 200px; }
-
-.tamanos-3 {
-  width: 300px; }
-
-/*NOSOTROS*/
 /*FOTOS REDONDAS*/
 .bio-photo {
   border-radius: 50%;
