@@ -21,6 +21,7 @@ footer {
   background-color: $azulClaro;
   color: white;
   font-family: Electrolize;
+  font-size:large;
 }
 
 body {
@@ -221,6 +222,7 @@ section#form {
   padding-right: 15vh;
   max-width: 90%;
   max-height: 90%;
+  font-size: large;
 }
 
 .imagenTarjeta {
@@ -487,7 +489,7 @@ section#mapa {
   }
 
   .fuenteSubtitulos {
-    font-size: 2em;
+    font-size: 3em;
     padding-left: 5%;
   }
 

@@ -10,7 +10,8 @@ footer {
   padding: 5%;
   background-color: #6E8DA4;
   color: white;
-  font-family: Electrolize; }
+  font-family: Electrolize;
+  font-size: large; }
 
 body {
   background-color: #202529; }
@@ -169,7 +170,8 @@ section#form {
   padding-left: 15vh;
   padding-right: 15vh;
   max-width: 90%;
-  max-height: 90%; }
+  max-height: 90%;
+  font-size: large; }
 
 .imagenTarjeta {
   width: 100%;
@@ -372,7 +374,7 @@ section#form {
   .fuenteDelTitulo {
     font-size: 3em; }
   .fuenteSubtitulos {
-    font-size: 2em;
+    font-size: 3em;
     padding-left: 5%; }
   section#mapa {
     padding-left: 5%;
