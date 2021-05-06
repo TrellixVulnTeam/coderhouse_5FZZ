@@ -34,10 +34,11 @@ body {
     display: grid;
     grid-template-areas:
     "cabeza"
+    "subtitulo"
     "index"
     "pie";
     grid-template-columns: 1fr;
-    grid-template-rows:  0.4fr 2fr fit-content;
+    grid-template-rows:  0.4fr 0.2fr 2fr fit-content;
     gap: 10%;
 }
 
@@ -60,11 +61,12 @@ section#index {
   display: grid;
   grid-template-areas:
   "cabeza"
+  "subtitulo"
   "repair"
   "pie";
   gap: 10%;
   grid-template-columns: 1fr;
-  grid-template-rows:  0.4fr 2fr fit-content;
+  grid-template-rows:  0.4fr 0.2 2fr fit-content;
 }
 
 section#repair {
@@ -84,12 +86,13 @@ section#repair {
   display: grid;
   grid-template-areas:
   "cabeza"
+  "subtitulo"
   "staff"
   "mapa"
   "pie";
   gap: 7%;
   grid-template-columns: 1fr;
-  grid-template-rows:  0.3fr fit-content 1.1fr 0.4fr;
+  grid-template-rows:  0.3fr 0.2fr fit-content 1.1fr 0.4fr;
 }
 
 section#staff {
@@ -119,12 +122,13 @@ section#mapa {
   display: grid;
   grid-template-areas:
   "cabeza"
+  "subtitulo"
   "novedades"
   "pie";
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   grid-template-columns: 1fr;
-  grid-template-rows:  0.4fr fit-content 0.4fr;
+  grid-template-rows:  0.4fr 0.2fr fit-content 0.4fr;
 }
 
 section#novedades {
@@ -141,11 +145,12 @@ section#novedades {
   display: grid;
   grid-template-areas:
   "cabeza"
+  "subtitulo"
   "form"
   "pie";
   gap: 5%;
   grid-template-columns: 1fr;
-  grid-template-rows:  0.4fr fit-content 0.4fr;
+  grid-template-rows:  0.4fr 0.2 fit-content 0.4fr;
 }
 
 section#form {
@@ -177,7 +182,7 @@ section#form {
 
 .fuenteSubtitulos {
   font-family: 'Montserrat', sans-serif;
-  font-size: 7vw;
+  font-size: 6vw;
   color: #A4ADD7;
   padding-left: 5%;
 }
@@ -402,8 +407,8 @@ section#form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     grid-template-areas:
     "rep1 rep2" 
     "rep3 rep4" 
@@ -452,8 +457,8 @@ section#mapa {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 7%;
+    padding-right: 7%;
     grid-template-areas:
     "rep1" 
     "rep2" 
@@ -524,7 +529,7 @@ section#form {
 }
 .fuenteSubtitulos {
   font-family: 'Montserrat', sans-serif;
-  font-size: 15vw;
+  font-size: 11vw;
   color: #A4ADD7;
   padding-left: 5%;
 }
