@@ -210,12 +210,12 @@ section#form {
 /*FONDOS BANNER*/  
 
 .fondoBanner1 {
-  background-image: url(/fotosIndex/fotoBanner.png);
+  background-image: url(/css/banners/fotoBanner.png);
 }
 
 @each $categoria in 2, 3, 4, 5{
   .fondoBanner#{$categoria}{
-      background-image: url(/fotosIndex/Banner#{$categoria}.png);
+      background-image: url(/css/banners/Banner#{$categoria}.png);
   }
 }
 
