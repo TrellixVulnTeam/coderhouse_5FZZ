@@ -169,19 +169,19 @@ section#form {
 
 /*FONDOS BANNER*/
 .fondoBanner1 {
-  background-image: url(/css/banners/fotoBanner.png); }
+  background-image: url(/banners/fotoBanner.png); }
 
 .fondoBanner2 {
-  background-image: url(/css/banners/Banner2.png); }
+  background-image: url(/banners/Banner2.png); }
 
 .fondoBanner3 {
-  background-image: url(/css/banners/Banner3.png); }
+  background-image: url(/banners/Banner3.png); }
 
 .fondoBanner4 {
-  background-image: url(/css/banners/Banner4.png); }
+  background-image: url(/banners/Banner4.png); }
 
 .fondoBanner5 {
-  background-image: url(/css/banners/Banner5.png); }
+  background-image: url(/banners/Banner5.png); }
 
 /*CARDS INDEX**/
 .tarjeta {
