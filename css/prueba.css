@@ -1,4 +1,4 @@
-/*VARIABLES*/
+/*VARIABLES.*/
 /*ESTRUCTURAS*/
 /*HEADER Y FOOTER*/
 header {
@@ -20,7 +20,10 @@ body {
 /*INDEX*/
 #index {
   display: grid;
-  grid-template-areas: "cabeza" "subtitulo" "index" "pie";
+  grid-template-areas: "cabeza"
+ "subtitulo"
+ "index"
+ "pie";
   grid-template-columns: 1fr;
   grid-template-rows: 0.4fr 0.2fr 2fr fit-content;
   gap: 10%; }
@@ -32,12 +35,18 @@ section#index {
   grid-template-rows: 1fr 1fr 1fr fit-content;
   gap: 5%;
   margin-left: 10%;
-  grid-template-areas: "index1"  "index2" "index3"  "index4"; }
+  grid-template-areas: "index1" 
+ "index2"
+ "index3" 
+ "index4"; }
 
 /*REPARACIONES*/
 #reparaciones {
   display: grid;
-  grid-template-areas: "cabeza" "subtitulo" "repair" "pie";
+  grid-template-areas: "cabeza"
+ "subtitulo"
+ "repair"
+ "pie";
   gap: 10%;
   grid-template-columns: 1fr;
   grid-template-rows: 0.4fr 0.2 2fr fit-content; }
@@ -49,12 +58,17 @@ section#repair {
   grid-template-rows: 1fr 1fr;
   margin-left: 10%;
   margin-right: 10%;
-  grid-template-areas: "rep1 rep2 rep3"  "rep4 rep5 rep6"; }
+  grid-template-areas: "rep1 rep2 rep3" 
+ "rep4 rep5 rep6"; }
 
 /*NOVEDADES*/
 #nosotros {
   display: grid;
-  grid-template-areas: "cabeza" "subtitulo" "staff" "mapa" "pie";
+  grid-template-areas: "cabeza"
+ "subtitulo"
+ "staff"
+ "mapa"
+ "pie";
   gap: 7%;
   grid-template-columns: 1fr;
   grid-template-rows: 0.3fr 0.2fr fit-content 1.1fr 0.4fr; }
@@ -81,7 +95,10 @@ section#mapa {
 /*NOSOTROS*/
 #novedades {
   display: grid;
-  grid-template-areas: "cabeza" "subtitulo" "novedades" "pie";
+  grid-template-areas: "cabeza"
+ "subtitulo"
+ "novedades"
+ "pie";
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   grid-template-columns: 1fr;
@@ -98,7 +115,10 @@ section#novedades {
 /*CONTACTO*/
 #contacto {
   display: grid;
-  grid-template-areas: "cabeza" "subtitulo" "form" "pie";
+  grid-template-areas: "cabeza"
+ "subtitulo"
+ "form"
+ "pie";
   gap: 5%;
   grid-template-columns: 1fr;
   grid-template-rows: 0.4fr 0.2 fit-content 0.4fr; }
@@ -319,7 +339,9 @@ section#form {
     gap: 0px 5px;
     margin-left: 10%;
     margin-right: 10%;
-    grid-template-areas: "staff1" "staff2" "staff3"; }
+    grid-template-areas: "staff1"
+ "staff2"
+ "staff3"; }
   section#repair {
     grid-area: repair;
     display: grid;
@@ -327,7 +349,9 @@ section#form {
     grid-template-rows: 1fr 1fr 1fr;
     margin-left: 5%;
     margin-right: 5%;
-    grid-template-areas: "rep1 rep2"  "rep3 rep4"  "rep5 rep6"; }
+    grid-template-areas: "rep1 rep2" 
+ "rep3 rep4" 
+ "rep5 rep6"; }
   .hover-text {
     font-size: 8vw; }
   .hover-subtext {
@@ -346,7 +370,10 @@ section#form {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 5%;
-    grid-template-areas: "index1"  "index2" "index3"  "index4"; }
+    grid-template-areas: "index1" 
+ "index2"
+ "index3" 
+ "index4"; }
   section#repair {
     grid-area: repair;
     display: grid;
@@ -354,7 +381,12 @@ section#form {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     padding-left: 7%;
     padding-right: 7%;
-    grid-template-areas: "rep1"  "rep2"  "rep3"  "rep4"  "rep5"  "rep6"; }
+    grid-template-areas: "rep1" 
+ "rep2" 
+ "rep3" 
+ "rep4" 
+ "rep5" 
+ "rep6"; }
   .tarjeta {
     padding-left: 5vh;
     padding-right: 5vh;
@@ -376,7 +408,9 @@ section#form {
     gap: 0px 5px;
     margin-left: 10%;
     margin-right: 10%;
-    grid-template-areas: "staff1" "staff2" "staff3"; }
+    grid-template-areas: "staff1"
+ "staff2"
+ "staff3"; }
   section#novedades {
     padding-left: 10%;
     padding-right: 10%;
