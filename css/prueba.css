@@ -61,7 +61,7 @@ section#repair {
   grid-template-areas: "rep1 rep2 rep3" 
  "rep4 rep5 rep6"; }
 
-/*NOVEDADES*/
+/*NOSOTROS*/
 #nosotros {
   display: grid;
   grid-template-areas: "cabeza"
@@ -92,7 +92,7 @@ section#mapa {
   padding-right: 15%;
   padding-bottom: 5%; }
 
-/*NOSOTROS*/
+/*NOVEDADES*/
 #novedades {
   display: grid;
   grid-template-areas: "cabeza"
